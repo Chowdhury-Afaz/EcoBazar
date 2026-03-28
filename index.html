@@ -15,157 +15,159 @@
 </head>
 <body>
     <header>
-        <!--Top Header-->
-        <div class="topHead">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 d-flex align-items-center justify-content-lg-start justify-content-center">
-                        <iconify-icon icon="fluent:location-28-regular" width="16" height="16"></iconify-icon> <address>Store Location: Lincoln- 344, Illinois, Chicago, USA</address>
+
+<!--Top Header-->
+<div class="topHead">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 d-flex align-items-center justify-content-lg-start justify-content-center">
+                <iconify-icon icon="fluent:location-28-regular" width="16" height="16"></iconify-icon>
+                <address>Store Location: Lincoln- 344, Illinois, Chicago, USA</address>
+            </div>
+            <div class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center">
+                <form action="">
+                    <select>
+                        <option>ENG</option>
+                        <option>BNG</option>
+                        <option>FRN</option>
+                    </select>
+                </form>
+                <form action="">
+                    <select>
+                        <option>USD</option>
+                        <option>BDT</option>
+                        <option>EUR</option>
+                    </select>
+                </form>
+                <a href="#">Sign In / Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Middle Header-->
+<div class="middleHead d-lg-block d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="#"><img class="img-fluid" src="./Image/Logo.png" alt="NavLogo"></a>
+            </div>
+
+            <div class="col-lg-6 d-lg-block d-none">
+                <form action="">
+                    <div class="d-flex">
+                        <iconify-icon icon="icon-park-outline:search" width="20" height="20"></iconify-icon>
+                        <input type="search" placeholder="Search...">
+                        <button>Search</button>
                     </div>
-                    <div class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center">
-                        <form action="">
-                            <select name="" id="">
-                                <option value="">ENG</option>
-                                <option value="">BNG</option>
-                                <option value="">FRN</option>
-                            </select>
-                        </form>
-                        <form action="">
-                            <select name="" id="">
-                                <option value="">USD</option>
-                                <option value="">BDT</option>
-                                <option value="">EUR</option>
-                            </select>
-                        </form>
-                        <a href="#">Sign In / Sign Up</a>
-                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-3 d-none d-lg-flex align-items-center justify-content-end">
+                <ul class="quickLinks align-items-center">
+                    <li>
+                        <a href="#"><iconify-icon icon="solar:heart-linear" width="32" height="32"></iconify-icon></a>
+                    </li>
+                    <li>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                            <a class="cart d-flex align-items-center" href="#">
+                                <div class="icon">
+                                    <p>2</p>
+                                    <iconify-icon icon="ph:handbag" width="32" height="32"></iconify-icon>
+                                </div>
+                                <div class="cartCnt">
+                                    <p>Shopping cart:</p>
+                                    <strong>$57.00</strong>
+                                </div>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Desktop Cart -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                    <iconify-icon icon="carbon:shopping-cart-clear" width="80" height="80"></iconify-icon>
+                    <p>No products in the cart</p>
+                    <a href="./index.html">Return to Shop</a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <!--Middle Header-->
-        <div class="middleHead d-lg-block d-none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3"><a href="#"><img class="img-fluid" src="./Image/Logo.png" alt="NavLogo"></a></div>
-                    <div class="col-lg-6 d-lg-block d-none">
-                        <form action="">
-                            <div class="d-flex">
-                                <iconify-icon icon="icon-park-outline:search" width="20" height="20"></iconify-icon>
-                                <input type="search" placeholder="Search...">
-                                <button>Search</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-3 d-none d-lg-flex align-items-center justify-content-end">
-                        <ul class="quickLinks align-items-center">
-                            <li><a href="#"><iconify-icon icon="solar:heart-linear" width="32" height="32"></iconify-icon></a></li>
-                            <li>
-                                <button type="button"
-                                    data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
-
-                                    <a class="cart d-flex align-items-center" href="#">
-                                        <div class="icon">
-                                            <p>2</p>
-                                            <iconify-icon icon="ph:handbag" width="32" height="32"></iconify-icon>
-                                        </div>
-
-                                        <div class="cartCnt">
-                                            <p>Shopping cart:</p>
-                                            <strong>$57.00</strong>
-                                        </div>
-                                    </a>
-                                </button>
-                            </li>
+<!--Bottom Header-->
+<div class="bottomHead d-lg-block d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul class="menu d-flex">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li>
+                        <a href="#">Shop</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Organic Food</a></li>
+                            <li><a href="#">Organic Food</a></li>
+                            <li><a href="#">Organic Food</a></li>
+                            <li><a href="#">Organic Food</a></li>
+                            <li><a href="#">Organic Food</a></li>
                         </ul>
-                    </div>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                        </div>
-                        <div class="offcanvas-body text-center">
-                            <iconify-icon icon="carbon:shopping-cart-clear" width="80" height="80"></iconify-icon>
-                            <p>No products in the cart</p>
-                            <a href="./index.html">Return to Shop</a>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="call col-lg-4 d-flex justify-content-end align-items-center">
+                <a href="#"><iconify-icon icon="line-md:phone-call" width="28" height="28"></iconify-icon></a>
+                <a href="tel:2195550114">(219) 555-0114</a>
             </div>
         </div>
+    </div>
+</div>
 
-        <!--Bottom Header-->
-        <div class="bottomHead d-lg-block d-none">
-            <div class="container">
-                <div class="row">
+<!--Mobile Header-->
+<div class="mblHead d-flex d-lg-none">
+    <div class="container">
+        <div class="row align-items-center">
 
-                    <div class="col-lg-8">
-                        <ul class="menu d-flex">
+            <!-- Menu -->
+            <div class="col-3 mblMenu">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+                    <iconify-icon icon="mi:menu" width="24" height="24"></iconify-icon>
+                </button>
 
-                            <li><a class="active" href="#">Home</a></li>
-
-                            <li>
-                                <a href="#">Shop<iconify-icon icon="iconamoon:arrow-down-2-light" width="24" height="24"></iconify-icon></a>
-                                <ul class="subMenu">
-                                    <li><a href="#">Organic Food</a></li>
-                                    <li><a href="#">Organic Food</a></li>
-                                    <li><a href="#">Organic Food</a></li>
-                                    <li><a href="#">Organic Food</a></li>
-                                    <li><a href="#">Organic Food</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
+                    <div class="offcanvas-header">
+                        <h5><img class="img-fluid" src="./Image/Logo.png" alt=""></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
 
-                    <div class="call col-lg-4 d-flex justify-content-end align-items-center">
-                        <a href="#">
-                            <iconify-icon icon="line-md:phone-call" width="28" height="28"></iconify-icon>
-                        </a>
-                        <a href="tel:2195550114">(219) 555-0114</a>
-                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion" id="accordionExample">
 
-                </div>
-            </div>
-        </div>
-
-        <!--Mobile Header-->
-        <div class="mblHead d-flex d-lg-none">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-3 mblMenu">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><iconify-icon icon="mi:menu" width="24" height="24"></iconify-icon></button>
-
-                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="staticBackdropLabel"><img class="img-fluid" src="./Image/Logo.png" alt=""></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                                         Home
                                     </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample"></div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
                                         Shop
                                     </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <ul>
                                             <li><a href="#">Organic Food</a></li>
@@ -175,84 +177,90 @@
                                             <li><a href="#">Organic Food</a></li>
                                         </ul>
                                     </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Pages
-                                    </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Blog
-                                    </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        About Us
-                                    </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Contact Us
-                                    </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    </div>
-                                </div>
                                 </div>
                             </div>
+
+                            <!-- FIXED UNIQUE IDS -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Pages
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        Blog
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                        About Us
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                        Contact Us
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                            </div>
+
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-6"><a href="#"><img src="./Image/Logo.png" alt=""></a></div>
+            <!-- Logo -->
+            <div class="col-6">
+                <a href="#"><img src="./Image/Logo.png" alt=""></a>
+            </div>
 
-                    <div class="col-3">
-                        <ul class="quickLinks align-items-center">
-                            <li>
-                        <button type="button"
-                                class="cart d-flex align-items-center"
+            <!-- Cart -->
+            <div class="col-3">
+                <ul class="quickLinks align-items-center">
+                    <li>
+                        <!-- FIXED -->
+                        <button type="button" class="cart d-flex align-items-center"
                                 data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight">
-
+                                data-bs-target="#offcanvasRightMobile">
                             <div class="icon">
                                 <p>2</p>
                                 <iconify-icon icon="ph:handbag" width="32" height="32"></iconify-icon>
                             </div>
                         </button>
-                            </li>
-                        </ul>
-                    </div>
+                    </li>
+                </ul>
+            </div>
 
-                    <!-- Offcanvas -->
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                        </div>
-                        <div class="offcanvas-body text-center">
-                            <iconify-icon icon="carbon:shopping-cart-clear" width="80" height="80"></iconify-icon>
-                            <p>No products in the cart</p>
-                            <a href="./index.html">Return to Shop</a>
-                        </div>
-                    </div>
+            <!-- FIXED -->
+            <div class="mblCart offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightMobile">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                    <iconify-icon icon="carbon:shopping-cart-clear" width="80" height="80"></iconify-icon>
+                    <p>No products in the cart</p>
+                    <a href="./index.html">Return to Shop</a>
                 </div>
             </div>
+
         </div>
+    </div>
+</div>
+
     </header>
 
     <main>
@@ -874,7 +882,7 @@
         <!--Featured Products-->
         <section id="product">
             <div class="container">
-                <div class="heading d-flex justify-content-between align-items-center">
+                <div class="heading d-flex justify-content-between align-items-center mt-5 mt-lg-0">
                     <h2>Featured Categories</h2>
                     <a href="#">View All <span><iconify-icon icon="mynaui:arrow-right" width="24" height="24"></iconify-icon></span></a>
                 </div>

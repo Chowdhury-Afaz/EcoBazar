@@ -301,6 +301,27 @@ iconify-icon{
     background-color: transparent;
     border: none;
 }
+.mblCart .offcanvas-body{
+    margin-top: 30px;
+}
+.mblCart iconify-icon{
+    color: var(--gray-scale-gray-–-200);
+}
+.mblCart p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-scale-gray-–-900);
+    margin: 10px 0;
+}
+.mblCart a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 30px;
+    background-color: var(--branding-success);
+    color: var(--gray-scale-white);
+    border: none;
+}
 /* Middle Header End */
 
 /* Hero Section Start */
